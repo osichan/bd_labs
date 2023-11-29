@@ -1,0 +1,28 @@
+development:
+  MYSQL_ROOT_USER: "root"
+  MYSQL_ROOT_PASSWORD: "SQLpassword"
+  MYSQL_USER: "oskar"
+  MYSQL_HOST: "localhost"  # Add this line
+  MYSQL_PORT: "3306"
+  MYSQL_DATABASE: "lab_3"
+  SQLALCHEMY_DATABASE_URI: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}"
+  SQLALCHEMY_TRACK_MODIFICATIONS: False
+  SECRET_KEY: "your_secret_key_for_development"
+
+production:
+  MYSQL_ROOT_USER: "root"
+  MYSQL_ROOT_PASSWORD: "SQLpassword"
+  MYSQL_USER: "oskar"
+  MYSQL_HOST: "localhost"  # Add this line
+  MYSQL_PORT: "3306"
+  MYSQL_DATABASE: "lab_3"
+  SQLALCHEMY_DATABASE_URI: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}"
+  SQLALCHEMY_TRACK_MODIFICATIONS: False
+  SECRET_KEY: "your_secret_key_for_production"
+
+ADDITIONAL_CONFIG:
+  MYSQL_ROOT_PASSWORD: "SQLpassword"
+  MYSQL_USER: "oskar"
+  MYSQL_ROOT_USER: "root"
+  SOME_KEY: "some_value"
+  ANOTHER_KEY: "another_value"
